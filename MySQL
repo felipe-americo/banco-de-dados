@@ -1,0 +1,7 @@
+create database if not exists nome_banco
+default character set 	utf8mb4
+collate utf8mb4_0900_ai_ci;
+
+create table if not exists nome_tabela (
+
+) character set utf8mb4;
