@@ -1,0 +1,26 @@
+create database lojinha; 
+use lojinha;
+create table if not exists cliente (
+id_cliente int primary key auto_increment,
+nome varchar(50) not null,
+cpf varchar(11)
+);
+-- ver tabela
+desc cliente;
+create table if not exists produto (
+id_produto int primary key auto_increment,
+valor decimal(7,2) not null,
+nome varchar(50),
+categoria enum('alimento','limpeza')
+);
+desc produto;
+create table if not exists produto (
+id int primary key auto_increment,
+quantidade int,
+data datetime,
+id_produto int,
+id_cliente int,
+foreign key (id_produto) references produto(id_produto),
+foreign key (id_cliente) references produto(id_cliente)
+);
+describe lojinha;
