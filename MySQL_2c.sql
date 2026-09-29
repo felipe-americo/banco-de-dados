@@ -50,9 +50,12 @@ foreign key (id_curso) references curso (id)
 desc video;
 
 insert into curso
+
 values ('marketing', 'admnistração'),
 ('lógica da programação', 'Mysql'),
  ('phython', 'Java'),
  ('Html', 'CSS');
+ 
+ select*from curso;
 
 drop database curso_certo;
